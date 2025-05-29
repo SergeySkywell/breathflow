@@ -1,8 +1,12 @@
-export function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
 
+export function App() {
   return (
-    <>
-      <h1 className="text-8xl">breathflow</h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   )
 }
